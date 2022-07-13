@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-g*j@io(t9=13otxd+j)6h4+4)!w51q&+mf)cgq)zk$)klm2lw+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['irfan-behance.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -75,22 +75,22 @@ WSGI_APPLICATION = 'behance.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'behance',
-        'USER':'postgres',
-        'PASSWORD':'12345',
-        'HOST':'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME':'behance',
+#         'USER':'postgres',
+#         'PASSWORD':'12345',
+#         'HOST':'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 
 # Password validation
