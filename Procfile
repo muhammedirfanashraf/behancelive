@@ -1,0 +1,1 @@
+web: gunicorn behance.wsgi --log-file -
